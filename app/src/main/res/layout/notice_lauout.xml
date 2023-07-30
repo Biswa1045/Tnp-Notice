@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/noticeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/igit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/h1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abhaya_libre_extrabold"
+                    android:text="CAREER DEVELOPMENT CENTRE"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/h2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/abhaya_libre_extrabold"
+                    android:text="INDIRA GANDHI INSTITUTE OF TECHNOLOGY, SARANG"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:layout_marginTop="8dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="IGIT/CDC-01/02/03"
+                android:textColor="@color/black"
+               android:fontFamily="@font/abhaya_libre_medium"
+                android:id="@+id/notice_no_pdf"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Date: 19.01.2023"
+                android:fontFamily="@font/abhaya_libre_medium"
+                android:id="@+id/date_pdf"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l2"
+            android:layout_marginTop="7dp"
+            android:text="NOTICE"
+            android:id="@+id/h3"
+            android:fontFamily="@font/abhaya_libre_extrabold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+<LinearLayout
+    android:layout_below="@+id/h3"
+    android:id="@+id/details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:text="Comapny name "
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/stream_t"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stream: "
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Btech"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/branch_t"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch: "
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETC"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/passout_layout"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/passout_t"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passout: "
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/passout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/position_layout"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+
+            android:id="@+id/position_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position: "
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developer"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ctc_layout"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/ctc_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CTC: "
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/ctc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 lpa"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/text_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alef"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/details"
+            android:text="This is to inform all the eligible students that, Arcelor Mittal NIppoln"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/deadline_layout"
+            android:layout_below="@+id/text_notice"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deadline_t"
+                android:text="DeadLine: "
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02.02.2023"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/link_layout"
+            android:layout_below="@+id/deadline_layout"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/link_t"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link: "
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/link_text"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="link "
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/sign_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_notice">
+
+            <ImageView
+                android:id="@+id/sign"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/sign" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign"
+                android:layout_alignParentRight="true"
+                android:id="@+id/h4"
+                android:layout_marginTop="5dp"
+                android:text="Professor-in-Charge, CDC"
+                android:fontFamily="@font/abhaya_libre_medium"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/sign_layout"
+            >
+            <TextView
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NB: For further queries/information, you can contact to your respective Career Development Centre Coordinator."
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
